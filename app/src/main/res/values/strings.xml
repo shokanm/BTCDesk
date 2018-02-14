@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BTCDesk</string>
+    <string name="error_message">Something went wrong</string>
+    <string name="sponsor_name">Powered by CoinDesk</string>
+    <string name="sponsor_page">https://www.coindesk.com/price/</string>
+    <string name="bitcoin">BitCoin</string>
+    <string-array name="currencies_array">
+        <item>KZT</item>
+        <item>USD</item>
+        <item>GBP</item>
+        <item>EUR</item>
+        <item>RUB</item>
+    </string-array>
+</resources>
