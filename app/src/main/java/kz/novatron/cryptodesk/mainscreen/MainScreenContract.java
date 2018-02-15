@@ -9,7 +9,7 @@ public interface MainScreenContract {
 
         void showProgressBar();
         void hideProgressBar();
-        void showError();
+        void showError(String errorMessage);
         void displayCurrentPrice(String currentPrice);
         void displayTimeUpdated(String timeUpdated);
     }

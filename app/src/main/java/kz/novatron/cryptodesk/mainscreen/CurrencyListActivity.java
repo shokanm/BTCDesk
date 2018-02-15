@@ -26,6 +26,7 @@ import kz.novatron.cryptodesk.data.SharedPreferencesManager;
 import static kz.novatron.cryptodesk.util.Constants.EUR;
 import static kz.novatron.cryptodesk.util.Constants.GBP;
 import static kz.novatron.cryptodesk.util.Constants.KZT;
+import static kz.novatron.cryptodesk.util.Constants.NETWORK_ERROR_PATTERN;
 import static kz.novatron.cryptodesk.util.Constants.RUB;
 import static kz.novatron.cryptodesk.util.Constants.USD;
 
@@ -109,8 +110,16 @@ public class CurrencyListActivity extends AppCompatActivity implements MainScree
     }
 
     @Override
-    public void showError() {
-        Toast.makeText(this, getString(R.string.error_message), Toast.LENGTH_SHORT).show();
+    public void showError(String errorMessage) {
+        Toast.makeText(this, getErrorMessage(errorMessage), Toast.LENGTH_SHORT).show();
+    }
+
+    private String getErrorMessage(String errorMessage){
+        String mess = (errorMessage != null && !errorMessage.equals("")) ? errorMessage : getString(R.string.error_message);
+        if(mess.contains(NETWORK_ERROR_PATTERN))
+            return getString(R.string.error_connection);
+        else
+            return mess;
     }
 
     @Override

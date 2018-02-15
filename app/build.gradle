@@ -6,7 +6,7 @@ android {
         applicationId "kz.novatron.cryptodesk"
         minSdkVersion 19
         targetSdkVersion 27
-        versionCode 1
+        versionCode 1000003
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }

@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">BTCDesk</string>
-    <string name="error_message">Something went wrong</string>
-    <string name="error_connection">Connection error occurred</string>
-    <string name="sponsor_name">Powered by CoinDesk</string>
+    <string name="error_message">Возникла непредвиденная ошибка</string>
+    <string name="error_connection">Возникла ошибка соединения</string>
+    <string name="sponsor_name">При поддержке CoinDesk</string>
     <string name="sponsor_page">https://www.coindesk.com/price/</string>
     <string name="bitcoin">BitCoin</string>
     <string-array name="currencies_array">

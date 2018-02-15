@@ -62,7 +62,7 @@ public class Presenter implements MainScreenContract.Presenter{
                     @Override
                     public void onError(Throwable e) {
                         mView.hideProgressBar();
-                        mView.showError();
+                        mView.showError(e.getMessage());
                     }
 
                     @Override

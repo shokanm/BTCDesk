@@ -15,4 +15,7 @@ public class Constants {
     public static final String SELECTED_CURRENCY = "SELECTED_CURRENCY";
 
     public static final String DOT_JSON = ".json";
+
+    public static final String NETWORK_ERROR_PATTERN = "Unable to resolve host \"api.coindesk.com\"";
+
 }
