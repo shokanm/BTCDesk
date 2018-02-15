@@ -88,6 +88,17 @@ public class CurrencyListActivity extends AppCompatActivity implements MainScree
         mPresenter.subscribe(sharedPreferencesManager.getSelectedCurrency());
     }
 
+    private int getPositionByName(String selectedCurrency) {
+        switch(selectedCurrency){
+            case KZT: return 0;
+            case USD: return 1;
+            case GBP: return 2;
+            case EUR: return 3;
+            case RUB: return 4;
+            default: return 0;
+        }
+    }
+
     @Override
     public void displayCurrentPrice(String currentPrice) {
         textCurrentPrice.setText(currentPrice);
@@ -127,16 +138,7 @@ public class CurrencyListActivity extends AppCompatActivity implements MainScree
         mPresenter.subscribe(sharedPreferencesManager.getSelectedCurrency());
     }
 
-    private int getPositionByName(String selectedCurrency) {
-        switch(selectedCurrency){
-            case KZT: return 0;
-            case USD: return 1;
-            case GBP: return 2;
-            case EUR: return 3;
-            case RUB: return 4;
-            default: return 0;
-        }
-    }
+
 
     @OnClick(R.id.text_disclaimer)
     public void sponsorNameClicked(){
